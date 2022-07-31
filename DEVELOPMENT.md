@@ -75,4 +75,45 @@ To be able to develop and run diagrams locally on you Mac device, you should hav
     ./autogen.sh
     ```
 
-7. If the unit tests and the bash script `autogen.sh` is working correctly, then your system is now ready for development.
+7. If the unit tests and the bash script `autogen.sh` is working correctly,
+then your system is now ready for development.
+
+## Alternate workflow using Tox
+
+To test with multiple versions of Python (with a single command!) and
+different platforms, you can use [Tox](http://pypi.python.org/pyp
+i/tox).  In general, each defined tox command will create a Python
+virtual environment in the tox working directory under the command name,
+eg, for the first command shown below: `.tox/py`.
+
+Installing from OS packages is recommended, however, you can instead
+install in a Python virtual environment.  So either use something like:
+
+    $ sudo apt-get install tox  # on Debian/Ubuntu
+    $ sudo emerge dev-python/tox  # on Gentoo/Funtoo
+
+or create a virtual environment and activate it, then:
+
+    $ pip install tox
+
+The following command will use your default system Python version to run
+tests:
+
+    $ tox -e py
+
+To run tests on multiple versions with coverage, try:
+
+    $ tox -e py38-linux,py39-linux  # for example
+
+(substitute your platform above, eg, macos or windows)
+
+Additional tox env commands:
+
+    $ tox -e dev  # create a dev environment and run `autogen.sh`
+    $ tox -e lint  # run pylint analysis
+    $ tox -e mypy  # run mypy import/type checking
+
+Note you can use the tox environments just like any other Python venv, eg:
+
+    $ source .tox/dev/bin/activate
+    
