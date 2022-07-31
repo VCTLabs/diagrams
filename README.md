@@ -36,6 +36,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![on premises provider](https://img.shields.io/badge/OnPremises-orange?color=5f87bf)
 ![generic provider](https://img.shields.io/badge/Generic-orange?color=5f87bf)
 ![programming provider](https://img.shields.io/badge/Programming-orange?color=5f87bf)
+[![embedded provider](https://img.shields.io/badge/Afinity-Embedded-blue)](https://github.com/ecceman/affinity)
 ![saas provider](https://img.shields.io/badge/SaaS-orange?color=5f87bf)
 ![c4 provider](https://img.shields.io/badge/C4-orange?color=5f87bf)
 

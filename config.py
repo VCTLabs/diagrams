@@ -17,6 +17,7 @@ PROVIDERS = (
     "aws",
     "azure",
     "digitalocean",
+    "embedded",
     "gcp",
     "ibm",
     "firebase",
@@ -41,12 +42,14 @@ CMD_SVG2PNG = "inkscape"
 CMD_SVG2PNG_OPTS = ("-w", "256", "-h", "256", "--export-type", "png")
 CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
+CMD_SVG2PNG_IM_OPTS_ALT = ("-bordercolor", "transparent", "-border", "8", "-resize", "256x256")
 
 FILE_PREFIXES = {
     "onprem": (),
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
     "digitalocean": (),
+    "embedded": (),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
     "ibm": (),
@@ -84,6 +87,7 @@ UPPER_WORDS = {
     ),
     "oci": ("oci", "ocid", "oke", "ocir", "ddos", "waf", "bm", "vm", "cdn", "vpn", "dns", "nat", "dms", "api", "id"),
     "elastic": ("apm", "siem", "ece", "eck", "sql"),
+    "embedded": ("isdn", "nas", "wlc", "xml"),
     "generic": ("vpn", "ios", "xen", "sql", "lxc"),
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
@@ -411,6 +415,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "embedded": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",
