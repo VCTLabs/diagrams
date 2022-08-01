@@ -67,6 +67,7 @@ Node classes list of embedded provider.
 
 ## embedded.storage
 
+- **diagrams.embedded.storage.Flash**
 - **diagrams.embedded.storage.NAS**
 - **diagrams.embedded.storage.Storage**
 

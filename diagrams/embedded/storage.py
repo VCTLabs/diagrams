@@ -8,6 +8,10 @@ class _Storage(_Embedded):
     _icon_dir = "resources/embedded/storage"
 
 
+class Flash(_Storage):
+    _icon = "flash.png"
+
+
 class NAS(_Storage):
     _icon = "nas.png"
 
