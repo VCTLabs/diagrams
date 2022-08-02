@@ -9,6 +9,8 @@ Node classes list of embedded provider.
 
 - **diagrams.embedded.device.Camera**
 - **diagrams.embedded.device.Camera_Dome**
+- **diagrams.embedded.device.Client**
+- **diagrams.embedded.device.Gpio_Pins**
 - **diagrams.embedded.device.Printer**
 - **diagrams.embedded.device.ServerCluster**
 - **diagrams.embedded.device.Server**
@@ -46,11 +48,11 @@ Node classes list of embedded provider.
 - **diagrams.embedded.network.Interconnect**
 - **diagrams.embedded.network.ISDN**
 - **diagrams.embedded.network.Loadbalancer**
+- **diagrams.embedded.network.Rj45**
 - **diagrams.embedded.network.Router**
 - **diagrams.embedded.network.Satellite**
 - **diagrams.embedded.network.Switch**
 - **diagrams.embedded.network.Switch_Multilayer**
-- **diagrams.embedded.network.Tj45**
 - **diagrams.embedded.network.Wifi**
 - **diagrams.embedded.network.WLC**
 
@@ -73,5 +75,4 @@ Node classes list of embedded provider.
 
 ## embedded.user
 
-- **diagrams.embedded.user.Client**
 - **diagrams.embedded.user.User**

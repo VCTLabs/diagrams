@@ -36,6 +36,10 @@ class Loadbalancer(_Network):
     _icon = "loadbalancer.png"
 
 
+class Rj45(_Network):
+    _icon = "rj45.png"
+
+
 class Router(_Network):
     _icon = "router.png"
 
@@ -50,10 +54,6 @@ class Switch(_Network):
 
 class Switch_Multilayer(_Network):
     _icon = "switch_multilayer.png"
-
-
-class Tj45(_Network):
-    _icon = "tj45.png"
 
 
 class Wifi(_Network):
