@@ -16,6 +16,14 @@ class Camera_Dome(_Device):
     _icon = "camera_dome.png"
 
 
+class Client(_Device):
+    _icon = "client.png"
+
+
+class Gpio_Pins(_Device):
+    _icon = "gpio_pins.png"
+
+
 class Printer(_Device):
     _icon = "printer.png"
 
