@@ -8,10 +8,6 @@ class _User(_Embedded):
     _icon_dir = "resources/embedded/user"
 
 
-class Client(_User):
-    _icon = "client.png"
-
-
 class User(_User):
     _icon = "user.png"
 
