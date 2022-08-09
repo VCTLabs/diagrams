@@ -11,6 +11,7 @@ Node classes list of embedded provider.
 - **diagrams.embedded.device.Camera_Dome**
 - **diagrams.embedded.device.Client**
 - **diagrams.embedded.device.Gpio_Pins**
+- **diagrams.embedded.device.Gpio_Pins2**
 - **diagrams.embedded.device.Printer**
 - **diagrams.embedded.device.ServerCluster**
 - **diagrams.embedded.device.Server**
