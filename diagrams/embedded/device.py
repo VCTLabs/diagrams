@@ -36,6 +36,10 @@ class Gpio_Pins2(_Device):
     _icon = "gpio_pins2.png"
 
 
+class Modem(_Device):
+    _icon = "modem.png"
+
+
 class Printer(_Device):
     _icon = "printer.png"
 

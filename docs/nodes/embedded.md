@@ -7,77 +7,180 @@ Node classes list of embedded provider.
 
 ## embedded.device
 
-- **diagrams.embedded.device.Camera**
-- **diagrams.embedded.device.Camera_Dome**
-- **diagrams.embedded.device.Camera_Dome2**
-- **diagrams.embedded.device.Client**
-- **diagrams.embedded.device.Gauge**
-- **diagrams.embedded.device.Gpio_Pins**
-- **diagrams.embedded.device.Gpio_Pins2**
-- **diagrams.embedded.device.Printer**
-- **diagrams.embedded.device.Rtc**
-- **diagrams.embedded.device.ServerCluster**
-- **diagrams.embedded.device.Server**
-- **diagrams.embedded.device.Tablet**
-- **diagrams.embedded.device.Wakeup**
+
+<img width="30" src="/img/resources/embedded/device/camera.png" alt="Camera" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Camera**
+
+<img width="30" src="/img/resources/embedded/device/camera_dome.png" alt="Camera_Dome" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Camera_Dome**
+
+<img width="30" src="/img/resources/embedded/device/camera_dome2.png" alt="Camera_Dome2" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Camera_Dome2**
+
+<img width="30" src="/img/resources/embedded/device/client.png" alt="Client" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Client**
+
+<img width="30" src="/img/resources/embedded/device/gauge.png" alt="Gauge" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Gauge**
+
+<img width="30" src="/img/resources/embedded/device/gpio_pins.png" alt="Gpio_Pins" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Gpio_Pins**
+
+<img width="30" src="/img/resources/embedded/device/gpio_pins2.png" alt="Gpio_Pins2" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Gpio_Pins2**
+
+<img width="30" src="/img/resources/embedded/device/modem.png" alt="Modem" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Modem**
+
+<img width="30" src="/img/resources/embedded/device/printer.png" alt="Printer" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Printer**
+
+<img width="30" src="/img/resources/embedded/device/rtc.png" alt="Rtc" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Rtc**
+
+<img width="30" src="/img/resources/embedded/device/server-cluster.png" alt="ServerCluster" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.ServerCluster**
+
+<img width="30" src="/img/resources/embedded/device/server.png" alt="Server" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Server**
+
+<img width="30" src="/img/resources/embedded/device/tablet.png" alt="Tablet" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Tablet**
+
+<img width="30" src="/img/resources/embedded/device/wakeup.png" alt="Wakeup" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.device.Wakeup**
 
 ## embedded.devtools
 
-- **diagrams.embedded.devtools.Bug**
-- **diagrams.embedded.devtools.Conversation**
-- **diagrams.embedded.devtools.Fingerprint**
-- **diagrams.embedded.devtools.Inspect2**
-- **diagrams.embedded.devtools.Tree**
-- **diagrams.embedded.devtools.XML**
+
+<img width="30" src="/img/resources/embedded/devtools/bug.png" alt="Bug" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.devtools.Bug**
+
+<img width="30" src="/img/resources/embedded/devtools/conversation.png" alt="Conversation" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.devtools.Conversation**
+
+<img width="30" src="/img/resources/embedded/devtools/fingerprint.png" alt="Fingerprint" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.devtools.Fingerprint**
+
+<img width="30" src="/img/resources/embedded/devtools/inspect2.png" alt="Inspect2" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.devtools.Inspect2**
+
+<img width="30" src="/img/resources/embedded/devtools/tree.png" alt="Tree" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.devtools.Tree**
+
+<img width="30" src="/img/resources/embedded/devtools/xml.png" alt="XML" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.devtools.XML**
 
 ## embedded.general
 
-- **diagrams.embedded.general.Cog**
-- **diagrams.embedded.general.Communications**
-- **diagrams.embedded.general.Grid**
-- **diagrams.embedded.general.Grid2**
-- **diagrams.embedded.general.Link**
-- **diagrams.embedded.general.Pinpoint**
-- **diagrams.embedded.general.Scull**
+
+<img width="30" src="/img/resources/embedded/general/cog.png" alt="Cog" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Cog**
+
+<img width="30" src="/img/resources/embedded/general/communications.png" alt="Communications" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Communications**
+
+<img width="30" src="/img/resources/embedded/general/grid.png" alt="Grid" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Grid**
+
+<img width="30" src="/img/resources/embedded/general/grid2.png" alt="Grid2" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Grid2**
+
+<img width="30" src="/img/resources/embedded/general/link.png" alt="Link" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Link**
+
+<img width="30" src="/img/resources/embedded/general/pinpoint.png" alt="Pinpoint" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Pinpoint**
+
+<img width="30" src="/img/resources/embedded/general/scull.png" alt="Scull" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.general.Scull**
 
 ## embedded.identity
 
-- **diagrams.embedded.identity.Ldap**
+
+<img width="30" src="/img/resources/embedded/identity/ldap.png" alt="Ldap" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.identity.Ldap**
 
 ## embedded.network
 
-- **diagrams.embedded.network.Cloud**
-- **diagrams.embedded.network.Dslam**
-- **diagrams.embedded.network.Firewall**
-- **diagrams.embedded.network.Hub**
-- **diagrams.embedded.network.Interconnect**
-- **diagrams.embedded.network.ISDN**
-- **diagrams.embedded.network.Loadbalancer**
-- **diagrams.embedded.network.Rj45**
-- **diagrams.embedded.network.Router**
-- **diagrams.embedded.network.Satellite**
-- **diagrams.embedded.network.Switch**
-- **diagrams.embedded.network.Switch_Multilayer**
-- **diagrams.embedded.network.Wifi**
-- **diagrams.embedded.network.WLC**
+
+<img width="30" src="/img/resources/embedded/network/cloud.png" alt="Cloud" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Cloud**
+
+<img width="30" src="/img/resources/embedded/network/dslam.png" alt="Dslam" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Dslam**
+
+<img width="30" src="/img/resources/embedded/network/firewall.png" alt="Firewall" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Firewall**
+
+<img width="30" src="/img/resources/embedded/network/hub.png" alt="Hub" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Hub**
+
+<img width="30" src="/img/resources/embedded/network/interconnect.png" alt="Interconnect" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Interconnect**
+
+<img width="30" src="/img/resources/embedded/network/isdn.png" alt="ISDN" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.ISDN**
+
+<img width="30" src="/img/resources/embedded/network/loadbalancer.png" alt="Loadbalancer" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Loadbalancer**
+
+<img width="30" src="/img/resources/embedded/network/rj45.png" alt="Rj45" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Rj45**
+
+<img width="30" src="/img/resources/embedded/network/router.png" alt="Router" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Router**
+
+<img width="30" src="/img/resources/embedded/network/satellite.png" alt="Satellite" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Satellite**
+
+<img width="30" src="/img/resources/embedded/network/switch.png" alt="Switch" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Switch**
+
+<img width="30" src="/img/resources/embedded/network/switch_multilayer.png" alt="Switch_Multilayer" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Switch_Multilayer**
+
+<img width="30" src="/img/resources/embedded/network/wifi.png" alt="Wifi" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.Wifi**
+
+<img width="30" src="/img/resources/embedded/network/wlc.png" alt="WLC" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.network.WLC**
 
 ## embedded.place
 
-- **diagrams.embedded.place.House**
-- **diagrams.embedded.place.Office**
+
+<img width="30" src="/img/resources/embedded/place/house.png" alt="House" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.place.House**
+
+<img width="30" src="/img/resources/embedded/place/office.png" alt="Office" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.place.Office**
 
 ## embedded.security
 
-- **diagrams.embedded.security.Padlock**
-- **diagrams.embedded.security.Padlock_Open**
-- **diagrams.embedded.security.Shield**
+
+<img width="30" src="/img/resources/embedded/security/padlock.png" alt="Padlock" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.security.Padlock**
+
+<img width="30" src="/img/resources/embedded/security/padlock_open.png" alt="Padlock_Open" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.security.Padlock_Open**
+
+<img width="30" src="/img/resources/embedded/security/shield.png" alt="Shield" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.security.Shield**
 
 ## embedded.storage
 
-- **diagrams.embedded.storage.Flash**
-- **diagrams.embedded.storage.NAS**
-- **diagrams.embedded.storage.Storage**
+
+<img width="30" src="/img/resources/embedded/storage/flash.png" alt="Flash" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.storage.Flash**
+
+<img width="30" src="/img/resources/embedded/storage/nas.png" alt="NAS" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.storage.NAS**
+
+<img width="30" src="/img/resources/embedded/storage/storage.png" alt="Storage" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.storage.Storage**
 
 ## embedded.user
 
-- **diagrams.embedded.user.User**
+
+<img width="30" src="/img/resources/embedded/user/user.png" alt="User" style="float: left; padding-right: 5px;" >
+**diagrams.embedded.user.User**
