@@ -8,6 +8,7 @@ providers=(
   "aws"
   "azure"
   "digitalocean"
+  "embedded"
   "gcp"
   "ibm"
   "firebase"
@@ -52,6 +53,10 @@ for pvd in "${providers[@]}"; do
   if [ "$pvd" == "oci" ] || [ "$pvd" = "ibm" ]; then
     echo "converting the svg to png using image magick for provider '$pvd'"
     python -m scripts.resource svg2png2 "$pvd"
+  fi
+  if [ "$pvd" = "embedded" ]; then
+    echo "converting the svg to png using image magick alt for provider '$pvd'"
+    python -m scripts.resource svg2png3 "$pvd"
   fi
   echo "cleaning the resource names for provider '$pvd'"
   python -m scripts.resource clean "$pvd"
