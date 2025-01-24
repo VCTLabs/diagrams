@@ -13,10 +13,10 @@ yourself.
 
 All node classes are auto-generated from image resource files. For example, the
 `diagram.aws.compute.EC2` class is auto-generated based on the
-`resources/aws/compute/ec2.png` image resource file.
+`diagrams/resources/aws/compute/ec2.png` image resource file.
 
 So, if you want to add new node resources or update existing node resources, you
-can just add or update the image files in `resources/<provider>/<type>/<image>`.
+can just add or update the image files in `diagrams/resources/<provider>/<type>/<image>`.
 
 Images should be resized to fit a maximum of 256 pixels wide or high.
 

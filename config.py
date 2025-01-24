@@ -8,7 +8,7 @@ APP_NAME = "diagrams"
 
 DIR_DOC_ROOT = "docs/nodes"
 DIR_APP_ROOT = "diagrams"
-DIR_RESOURCE = "resources"
+DIR_RESOURCE = "diagrams/resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
