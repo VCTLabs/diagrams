@@ -116,4 +116,3 @@ Additional tox env commands:
 Note you can use the tox environments just like any other Python venv, eg:
 
     $ source .tox/dev/bin/activate
-    
