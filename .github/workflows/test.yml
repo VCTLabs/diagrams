@@ -24,6 +24,11 @@ jobs:
       matrix:
         python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
     runs-on: ubuntu-latest
+    permissions:
+      packages: read
+      actions: read
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
