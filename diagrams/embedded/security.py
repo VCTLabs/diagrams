@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _Security(_Embedded):
     _type = "security"
-    _icon_dir = "resources/embedded/security"
+    _icon_dir = "diagrams/resources/embedded/security"
 
 
 class Padlock(_Security):

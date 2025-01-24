@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _Place(_Embedded):
     _type = "place"
-    _icon_dir = "resources/embedded/place"
+    _icon_dir = "diagrams/resources/embedded/place"
 
 
 class House(_Place):

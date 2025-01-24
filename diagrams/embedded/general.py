@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _General(_Embedded):
     _type = "general"
-    _icon_dir = "resources/embedded/general"
+    _icon_dir = "diagrams/resources/embedded/general"
 
 
 class Cog(_General):

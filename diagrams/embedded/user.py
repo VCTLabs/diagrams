@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _User(_Embedded):
     _type = "user"
-    _icon_dir = "resources/embedded/user"
+    _icon_dir = "diagrams/resources/embedded/user"
 
 
 class User(_User):

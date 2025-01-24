@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _Network(_Embedded):
     _type = "network"
-    _icon_dir = "resources/embedded/network"
+    _icon_dir = "diagrams/resources/embedded/network"
 
 
 class Cloud(_Network):

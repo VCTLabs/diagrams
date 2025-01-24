@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _Device(_Embedded):
     _type = "device"
-    _icon_dir = "resources/embedded/device"
+    _icon_dir = "diagrams/resources/embedded/device"
 
 
 class Camera(_Device):

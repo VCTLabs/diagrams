@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _Identity(_Embedded):
     _type = "identity"
-    _icon_dir = "resources/embedded/identity"
+    _icon_dir = "diagrams/resources/embedded/identity"
 
 
 class Ldap(_Identity):

@@ -5,7 +5,7 @@ from . import _Embedded
 
 class _Storage(_Embedded):
     _type = "storage"
-    _icon_dir = "resources/embedded/storage"
+    _icon_dir = "diagrams/resources/embedded/storage"
 
 
 class Flash(_Storage):
