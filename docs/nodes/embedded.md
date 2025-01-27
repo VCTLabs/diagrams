@@ -3,7 +3,7 @@ id: embedded
 title: Embedded
 ---
 
-Node classes list of embedded provider.
+Node classes list of the embedded provider.
 
 ## embedded.device
 
