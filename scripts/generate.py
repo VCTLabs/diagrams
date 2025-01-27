@@ -1,6 +1,6 @@
 import os
 import sys
-from typing import Iterable
+from typing import Dict, Iterable, List
 
 from jinja2 import Environment, FileSystemLoader, Template, exceptions
 
@@ -55,7 +55,7 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
         name = "".join([up_or_title(pvd, s) for s in base.split("-")])
         return name
 
-    typ_classes = {}
+    typ_classes: Dict[str, List] = {}
     for typ, (paths, resource_root) in sorted(typ_paths.items()):
         typ_classes[typ] = []
         for path in paths:

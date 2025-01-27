@@ -117,6 +117,10 @@ def cleaner_programming(f):
     return f.lower()
 
 
+def cleaner_embedded(f):
+    return f.lower()
+
+
 def cleaner_generic(f):
     return f.lower()
 
@@ -142,6 +146,7 @@ cleaners = {
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "digitalocean": cleaner_digitalocean,
+    "embedded": cleaner_embedded,
     "gcp": cleaner_gcp,
     "ibm": cleaner_ibm,
     "firebase": cleaner_firebase,
@@ -212,12 +217,27 @@ def svg2png2(pvd: str) -> None:
         [_convert(root, path) for path in svgs]
 
 
+def svg2png3(pvd: str) -> None:
+    """Convert the svg into png using image magick (alternate args)"""
+
+    def _convert(base: str, path: str):
+        path_src = os.path.join(base, path)
+        path_dest = path_src.replace(".svg", ".png")
+        subprocess.call([cfg.CMD_SVG2PNG_IM, *cfg.CMD_SVG2PNG_IM_OPTS_ALT, path_src, path_dest])
+        subprocess.call(["rm", path_src])
+
+    for root, _, files in os.walk(resource_dir(pvd)):
+        svgs = filter(lambda f: f.endswith(".svg"), files)
+        [_convert(root, path) for path in svgs]
+
+
 # fmt: off
 commands = {
     "clean": clean_png,
     "round": round_png,
     "svg2png": svg2png,
     "svg2png2": svg2png2,
+    "svg2png3": svg2png3,
 }
 # fmt: on
 
