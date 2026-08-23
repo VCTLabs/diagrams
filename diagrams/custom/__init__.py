@@ -8,7 +8,7 @@ from diagrams import Node
 class Custom(Node):
     _provider = "custom"
     _type = "custom"
-    _icon_dir = None
+    _icon_dir = ""
 
     fontcolor = "#ffffff"
 

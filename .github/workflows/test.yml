@@ -22,8 +22,13 @@ jobs:
   test:
     strategy:
       matrix:
-        python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+        python: ["3.9", "3.10", "3.11", "3.12", "3.13", "3.14"]
     runs-on: ubuntu-latest
+    permissions:
+      packages: read
+      actions: read
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

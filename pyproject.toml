@@ -1,20 +1,30 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = [
+    "setuptools>=61.0.0",
+    "setuptools_scm[toml]>=7.0",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
 
 [project]
 name = "diagrams"
-version = "0.25.1"
+dynamic = ["version"]
 description = "Diagram as Code"
 authors = [{ name = "mingrammer", email = "mingrammer@gmail.com" }]
 requires-python = "~=3.9"
 readme = "README.md"
 license = "MIT"
 dependencies = [
-    "graphviz>=0.13.2,<0.22.0",
-    "jinja2>=2.10,<4.0",
-    "typed-ast>=1.5.5,<2 ; python_version<'3.8'",
+    "graphviz >= 0.13.2, < 0.22.0",
+    "jinja2 >= 2.10, < 4.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["diagrams", "resources"]
+#namespaces = false
 
 [project.scripts]
 diagrams = "diagrams.cli:main"
@@ -22,6 +32,12 @@ diagrams = "diagrams.cli:main"
 [project.urls]
 Homepage = "https://diagrams.mingrammer.com"
 Repository = "https://github.com/mingrammer/diagrams"
+
+[tool.poetry]
+version = "0.25"  # base version
+# this is why poetry is a really bad answer for development workflows:
+# poetry devs refuse to accept SCM is a single source of (version) truth
+# so poetry install will only use the above static version string. really??
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3"
@@ -31,8 +47,58 @@ isort = "^6.0"
 black = "^24.4"
 pre-commit = "^4.0"
 
-[tool.hatch.build]
-only-include = ["diagrams", "resources"]
-
 [tool.black]
-line-length=120
+line-length = 120
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests",]
+log_cli =  false
+doctest_optionflags = ["ELLIPSIS", "NORMALIZE_WHITESPACE",]
+addopts = "--strict-markers"
+markers = "subscript"
+filterwarnings = [
+    "ignore:currentThread:DeprecationWarning",
+    "ignore:co_lnotab:DeprecationWarning",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["diagrams/__init__.py"]
+omit = [
+    "tests/*",
+    ".tox/*",
+    "diagrams/oci/*",
+    "diagrams/saas/*",
+    "diagrams/openstack/*",
+    "diagrams/custom/*",
+    "diagrams/firebase/*",
+    "diagrams/onprem/*",
+    "diagrams/alibabacloud/*",
+    "diagrams/outscale/*",
+    "diagrams/azure/*",
+    "diagrams/gcp/*",
+    "diagrams/embedded/*",
+    "diagrams/k8s/*",
+    "diagrams/digitalocean/*",
+    "diagrams/base/*",
+    "diagrams/ibm/*",
+    "diagrams/programming/*",
+    "diagrams/elastic/*",
+    "diagrams/aws/*",
+    "diagrams/generic/*",
+]
+
+[tool.coverage.paths]
+source = ["diagrams/__init__.py"]
+
+[tool.coverage.report]
+fail_under = 55
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "raise AssertionError",
+    "if typing.TYPE_CHECKING:",
+    "if TYPE_CHECKING:",
+]

@@ -2,7 +2,7 @@ import contextvars
 import os
 import uuid
 from pathlib import Path
-from typing import Dict, List, Optional, Union
+from typing import Any, Dict, List, Optional, Union
 
 from graphviz import Digraph
 
@@ -41,8 +41,8 @@ THEMES = {
 # These global contexts are for letting the clusters and nodes know
 # where context they are belong to. So the all clusters and nodes does
 # not need to specify the current diagrams or cluster via parameters.
-__diagram = contextvars.ContextVar("diagrams")
-__cluster = contextvars.ContextVar("cluster")
+__diagram: contextvars.ContextVar[Any] = contextvars.ContextVar("diagrams")
+__cluster: contextvars.ContextVar[Any] = contextvars.ContextVar("cluster")
 
 
 def getdiagram() -> "Diagram":
@@ -333,11 +333,11 @@ class Cluster:
 class Node:
     """Node represents a node for a specific backend service."""
 
-    _provider = None
-    _type = None
+    _provider: str = ""
+    _type: str = ""
 
-    _icon_dir = None
-    _icon = None
+    _icon_dir: str = ""
+    _icon: str = ""
 
     _height = 1.9
 
@@ -604,7 +604,7 @@ class Edge:
                 return self
 
     @property
-    def attrs(self) -> Dict:
+    def attrs(self) -> Dict[str, str]:
         if self.forward and self.reverse:
             direction = "both"
         elif self.forward:
